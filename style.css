@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header{
@@ -20,7 +21,11 @@ nav{
 
 nav img{
     width: 150px;
+}
 
+.nav-link{
+    flex: 1;
+    text-align: right;
 }
 
 .nav-link ul li {
@@ -28,4 +33,24 @@ nav img{
     display: inline-block;
     padding: 8px;
 
+}
+
+.nav-link ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-link ul li::after{
+    content: "";
+    width: 0 ;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-link ul li:hover::after{
+    width: 100%;
 }
